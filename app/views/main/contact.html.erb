@@ -1,0 +1,108 @@
+<div class="pi-section-w pi-section-base">
+  <div style="padding: 30px 40px 26px" class="pi-section">
+    <div class="pi-row">
+      <div class="pi-col-sm-4 pi-center-text-xs">
+        <h1 class="h2 pi-weight-300 pi-margin-bottom-5">Contact us</h1>
+      </div>
+      <div class="pi-col-sm-8 pi-text-right pi-center-text-xs">
+        <p class="lead-20 pi-weight-300 pi-margin-top-5 pi-margin-bottom-5"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- - - - - - - - - - SECTION - - - - - - - - - -->
+
+<div class="pi-section-w pi-section-white piICheck piStylishSelect piSocials">
+  <div class="pi-section">
+
+    <div class="pi-row">
+      <div class="pi-col-sm-7">
+        <h2 class="h4 pi-has-bg pi-weight-700 pi-uppercase pi-letter-spacing pi-margin-bottom-30">
+          Get In Touch
+        </h2>
+
+        <!-- Contact form -->
+        <form role="form" action="handlers/formContact.php" class="pi-contact-form">
+          <div class="pi-error-container"></div>
+          <div class="pi-row pi-grid-small-margins">
+            <div class="pi-col-sm-6">
+              <div class="form-group pi-padding-bottom-10">
+                <label for="exampleInputName1">Name *</label>
+                <input type="text" class="form-control form-control-name" id="exampleInputName1">
+              </div>
+              <div class="form-group pi-padding-bottom-10">
+                <label for="exampleInputEmail1">Email address *</label>
+                <input type="email" class="form-control form-control-email" id="exampleInputEmail1">
+              </div>
+            </div>
+            <div class="pi-col-sm-6">
+              <div class="form-group pi-padding-bottom-10">
+                <label for="exampleInputCompany">Company Name</label>
+                <input type="text" class="form-control form-control-company-name" id="exampleInputCompany">
+              </div>
+              <div class="form-group pi-padding-bottom-10">
+                <label for="exampleInputPhone">Phone</label>
+                <input type="text" class="form-control form-control-phone" id="exampleInputPhone">
+              </div>
+            </div>
+          </div>
+          <div class="form-group pi-padding-bottom-10">
+            <label for="exampleInputMessage1">Message *</label>
+            <textarea class="form-control form-control-comments" id="exampleInputMessage1" placeholder="How can we help?" rows="3"></textarea>
+          </div>
+          <p>
+            <button class="btn pi-btn-base">
+              Send Message<i class="icon-paper-plane pi-icon-right"></i>
+            </button>
+          </p>
+        </form>
+        <!-- End contact form -->
+
+      </div>
+      <div class="pi-col-sm-4 pi-col-sm-offset-1">
+
+        <h2 class="h4 pi-has-bg pi-weight-700 pi-uppercase pi-letter-spacing pi-margin-bottom-30">
+          Contact Us
+        </h2>
+
+        <ul class="pi-list-with-icons pi-list-big-margins pi-padding-bottom-10">
+          <li><span class="pi-bullet-icon"><i class="icon-location"></i></span><b>Helios Technologies</b><br>Immeuble Charlebourg - BAT C, <br>14/30 rue de Mantes,<br> 92700 COLOMBES<br>
+          <li><span class="pi-bullet-icon"><i class="icon-mail"></i></span><span class="mbox-contact"></span></li>
+          <li><span class="pi-bullet-icon"><i class="icon-phone"></i></span><span class="phone-number"></span></li>
+        </ul>
+
+        <iframe width="100%" height="220" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=14/30+Rue+de+Mantes,+92700+Colombes,+France&amp;output=embed&amp;z=15"></iframe>
+        <hr>
+        <h2 class="h4 pi-has-bg pi-weight-700 pi-uppercase pi-letter-spacing pi-margin-bottom-30">
+          Follow Us
+        </h2>
+        <ul class="pi-social-icons pi-colored-bg pi-round-corners pi-clearfix pi-padding-bottom-10">
+          <%= render "shared/social_links" %>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+
+<!-- - - - - - - - - - SECTION - - - - - - - - - -->
+<div class="pi-section-w pi-section-white">
+  <div class="pi-google-map pi-google-map-wide googleMap"
+     data-map-type="roadmap"
+     data-map-zoom="14"
+     data-map-style="base"
+     data-map-marker="img/marker-base.png"
+     data-map-marker-size="67,81"
+     data-map-marker-anchor="30,81"
+     data-map-coords="40.70502;-74.006344"
+     data-map-address="Vancouver"
+     data-map-address2="Toronto">
+  </div>
+</div>
+
+<!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+</div>

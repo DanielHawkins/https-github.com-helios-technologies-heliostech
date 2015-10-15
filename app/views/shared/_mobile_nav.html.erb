@@ -1,0 +1,45 @@
+<li>
+  <%= link_to root_path do %>
+  <span>Home</span>
+  <% end %>
+</li>
+<li>
+  <%= link_to about_path do %>
+  <span>About us</span>
+  <% end %>
+  <ul>
+    <li><%= link_to about_path do %><span>The Company</span><% end %></li>
+    <li><%= link_to expertise_path do %><span>Areas of Expertise</span><% end %></li>
+    <li><%= link_to team_path do %><span>Our Team</span><% end %></li>
+  </ul>
+</li>
+<li>
+  <%= link_to services_path do %>
+  <span>Services</span>
+  <% end %>
+  <ul>
+    <li><%= link_to cloud_hosting_path do %><span>Enterprise Private Cloud Hosting</span><% end %></li>
+    <li><%= link_to consulting_path do %><span>DevOps Consulting</span><% end %></li>
+  </ul>
+</li>
+
+<li>
+  <%= link_to products_path do %>
+  <span>Products</span>
+  <% end %>
+</li>
+<li>
+  <%= link_to partners_path do %>
+  <span>Partners</span>
+  <% end %>
+</li>
+<li>
+  <%= link_to jobs_path do %>
+  <span>Jobs</span>
+  <% end %>
+</li>
+<li>
+  <%= link_to contact_path do %>
+  <span>Contact</span>
+  <% end %>
+</li>

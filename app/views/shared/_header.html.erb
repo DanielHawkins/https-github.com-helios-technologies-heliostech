@@ -1,0 +1,86 @@
+<!-- Header -->
+<div class="pi-header">
+
+  <!-- Header row -->
+  <div class="pi-section-w pi-section-dark">
+    <div class="pi-section pi-row-sm">
+
+      <!-- Phone -->
+      <div class="pi-row-block pi-row-block-txt">
+        <i class="pi-row-block-icon icon-phone pi-icon-base pi-icon-square"></i>Call Us:
+        <strong><span class="phone-number"></span></strong>
+      </div>
+      <!-- End phone -->
+
+      <!-- Email -->
+      <div class="pi-row-block pi-row-block-txt pi-hidden-xs"><i
+        class="pi-row-block-icon icon-mail pi-icon-base pi-icon-square"></i>Email: <a
+        href="#"><span class="mbox-contact"></span></a>
+      </div>
+      <!-- End email -->
+
+      <!-- Social icons -->
+      <div class="pi-row-block pi-pull-right pi-hidden-2xs">
+        <ul class="pi-social-icons pi-stacked pi-jump pi-full-height pi-bordered pi-small pi-colored-bg clearFix">
+          <%= render "shared/social_links" %>
+        </ul>
+      </div>
+      <!-- End social icons -->
+
+      <!-- Text -->
+      <div class="pi-row-block pi-row-block-txt pi-pull-right pi-hidden-xs">Follow Us:</div>
+      <!-- End text -->
+
+    </div>
+  </div>
+  <!-- End header row -->
+
+  <div class="pi-header-sticky">
+    <!-- Header row -->
+    <div class="pi-section-w pi-section-white pi-shadow-bottom pi-row-reducible">
+      <div class="pi-section pi-row-lg">
+
+        <!-- Logo -->
+        <div class="pi-row-block pi-row-block-logo">
+          <%= link_to root_path do %>
+          <%= image_tag("logo.png") %>
+          <% end %>
+        </div>
+        <!-- End logo -->
+
+        <!-- Text -->
+        <div class="pi-row-block pi-row-block-txt pi-hidden-2xs"></div>
+        <!-- End text -->
+
+        <!-- Menu -->
+        <div class="pi-row-block pi-pull-right">
+          <ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm active-class-nav">
+            <%= render "shared/main_nav" %>
+          </ul>
+        </div>
+        <!-- End menu -->
+
+        <!-- Mobile menu button -->
+        <div class="pi-row-block pi-pull-right pi-hidden-lg-only pi-hidden-md-only">
+          <button class="btn pi-btn pi-mobile-menu-toggler" data-target="#pi-main-mobile-menu">
+            <i class="icon-menu pi-text-center"></i>
+          </button>
+        </div>
+        <!-- End mobile menu button -->
+
+        <!-- Mobile menu -->
+        <div id="pi-main-mobile-menu" class="pi-section-menu-mobile-w pi-section-dark">
+          <div class="pi-section-menu-mobile">
+            <ul class="pi-menu-mobile pi-items-have-borders pi-menu-mobile-dark">
+              <%= render "shared/mobile_nav" %>
+            </ul>
+          </div>
+        </div>
+        <!-- End mobile menu -->
+      </div>
+    </div>
+    <!-- End header row -->
+  </div>
+
+</div>
+<!-- End header -->

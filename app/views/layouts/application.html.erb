@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Helios</title>
+  <title>Helios Technologies</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <!--Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic'
+      rel='stylesheet' type='text/css'/>
 </head>
 <body>
 
+<div id="pi-all">
+
+<%= render "shared/header" %>
+
+<div id="page"><!-- - - - - - - - - - SECTION - - - - - - - - - -->
+
 <%= yield %>
+
+<%= render "shared/footer" %>
+
+</div>
+<div class="pi-scroll-top-arrow" data-scroll-to="0"></div>
+
+</div>
+
+</div>
+<!-- End #page -->
+
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<%= yield :scripts %>
+
+<script>
+$(document).on('ready page:load', function () {
+  jQuery(function() {
+    jQuery('.active-class-nav li').each(function() {
+      var href = jQuery(this).find('a').attr('href');
+      if (href === window.location.pathname) {
+        jQuery(this).addClass('active');
+      }
+    });
+  });
+});
+</script>
 
 </body>
 </html>

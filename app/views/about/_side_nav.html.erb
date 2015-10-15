@@ -1,0 +1,26 @@
+<% content_for :scripts do %>
+  <script>
+  jQuery(document).ready(function($){
+    jQuery(function() {
+      jQuery('.active-class-nav li').each(function() {
+        var href = jQuery(this).find('a').attr('href');
+        if (href === window.location.pathname) {
+          jQuery(this).addClass('pi-active');
+        }
+      });
+    });
+  });
+  </script>
+<% end %>
+
+<ul class="pi-tabs-navigation-no-js pi-tabs-navigation-transparent-no-js active-class-nav">
+  <li>
+    <%= link_to "The Company", about_path %>
+  </li>
+  <li>
+    <%= link_to "Areas of Expertise", expertise_path %>
+  </li>
+  <li>
+    <%= link_to "Our Team", team_path %>
+  </li>
+</ul>

@@ -1,0 +1,40 @@
+<% content_for :scripts do %>
+  <script>
+    $(document).ready(function() {
+
+      $("#logos-slider").owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        dots: false,
+        responsiveClass:true,
+        responsive:{
+          0:{
+            items:1,
+            autoplayTimeout:2000
+          },
+          600:{
+            items:3,
+          },
+          1000:{
+            items:4
+          }
+        }
+      });
+
+    });
+  </script>
+<% end %>
+
+
+<div id="logos-slider" class="owl-carousel logos-slider">
+  <div class="pi-img-w pi-img-opacity-50 pi-img-grayscale-hover"><%= image_tag "logos/ansible-m.png" %></div>
+  <div class="pi-img-w pi-img-opacity-50 pi-img-grayscale-hover"><%= image_tag "logos/docker-m.png" %></div>
+  <div class="pi-img-w pi-img-opacity-50 pi-img-grayscale-hover"><%= image_tag "logos/vagrant-m.png" %></div>
+  <div class="pi-img-w pi-img-opacity-50 pi-img-grayscale-hover"><%= image_tag "logos/chef-m.png" %></div>
+  <div class="pi-img-w pi-img-opacity-50 pi-img-grayscale-hover"><%= image_tag "logos/hadoop-m.png" %></div>
+  <div class="pi-img-w pi-img-opacity-50 pi-img-grayscale-hover"><%= image_tag "logos/openstack-m.png" %></div>
+</div>

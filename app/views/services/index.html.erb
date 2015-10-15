@@ -1,0 +1,100 @@
+<div class="pi-section-w pi-section-base">
+  <div style="padding: 30px 40px 26px" class="pi-section">
+    <div class="pi-row">
+      <div class="pi-col-sm-4 pi-center-text-xs">
+        <h1 class="h2 pi-weight-300 pi-margin-bottom-5">Services</h1>
+      </div>
+      <div class="pi-col-sm-8 pi-text-right pi-center-text-xs">
+        <p class="lead-20 pi-weight-300 pi-margin-top-5 pi-margin-bottom-5">
+          You Build Your Application, We'll Take Care of Your Infrastructure
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- - - - - - - - - - SECTION - - - - - - - - - -->
+
+<div class="pi-section-w pi-section-white">
+  <div class="pi-section pi-padding-bottom-10">
+
+    <!-- Row -->
+    <div class="pi-row">
+
+      <!-- Col 10 -->
+      <div class="pi-col-sm-10 pi-col-sm-offset-1 pi-padding-bottom-20">
+        <p class="lead-30 pi-text-dark pi-text-center">
+          We are entirely focused on the legacy modernization market with our Continuous delivery platform for mainframe systems.
+        </p>
+      </div>
+      <!-- End col 10 -->
+    </div>
+    <!-- End row -->
+
+    <!-- Row -->
+
+    <div class="pi-row pi-grid-big-margins">
+      <br>
+      <!-- Col 6 -->
+      <div class="pi-col-sm-6 pi-col-xs-6 pi-padding-bottom-100">
+
+        <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-icon-box-hover pi-text-center">
+
+          <%= link_to cloud_hosting_path do %>
+            <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-dark">
+              <%= image_tag "img_external/icons/80px/cog-lined-white.png" %>
+            </div>
+            <h4>Enterprise cloud hosting</h4>
+            <p>
+              Get a managed OpenStack cloud in three easy steps
+            </p>
+          <% end %>
+          <p>
+            <%= link_to "More info", cloud_hosting_path, class: "btn pi-btn" %>
+          </p>
+        </div>
+
+      </div>
+      <!-- End col 6 -->
+
+      <!-- Col 6 -->
+      <div class="pi-col-sm-6 pi-col-xs-6 pi-padding-bottom-10">
+
+        <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-icon-box-hover pi-text-center">
+
+          <%= link_to consulting_path do %>
+            <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-dark">
+              <%= image_tag "img_external/icons/80px/light-bulb-lined-white.png" %>
+            </div>
+            <h4>DevOps consulting services</h4>
+             <p>
+              Release Reliable Software Faster
+            </p>
+          <% end %>
+          <p>
+            <%= link_to "More info", consulting_path, class: "btn pi-btn" %>
+          </p>
+        </div>
+
+      </div>
+      <!-- End col 6 -->
+
+
+    </div>
+    <!-- End row -->
+
+  </div>
+</div>
+<!-- End promo -->
+
+<!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+
+
+<div class="pi-section-w pi-section-white">
+  <div class="pi-section pi-padding-bottom-30">
+    <%= render "shared/logos_slider" %>
+  </div>
+</div>
+
+<%= render "shared/request_a_quote_footer" %>

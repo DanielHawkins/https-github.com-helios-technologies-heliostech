@@ -10,6 +10,29 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+// settings
+@import "settings";
+
+// vendor
+@import "bootstrap";
+@import "fontello";
+@import "rs-plugin/css/pi.settings";
+@import "colorbox.css";
+@import "owlcarousel/owl.carousel.min";
+@import "owlcarousel/owl.theme.default.min";
+
+// style
+@import "main";
+@import "global";
+@import "typo";
+@import "counters";
+@import "testimonials";
+@import "portfolio";
+@import "slider";
+@import "social";
+@import "tabs";
+@import "counters";
+@import "boxes";
+
