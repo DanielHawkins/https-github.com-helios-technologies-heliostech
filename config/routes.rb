@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'products' => 'main#products' , as: 'products'
   get 'partners' => 'main#partners' , as: 'partners'
   get 'contact' => 'main#contact' , as: 'contact'
+  post 'contact' => 'main#contact_submit'
   get 'jobs' => 'main#jobs' , as: 'jobs'
 
   # ABOUT US
