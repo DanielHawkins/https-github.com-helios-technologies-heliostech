@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+
+
+    <title> <%= yield(:title) %> </title>
+    <meta name="description" content="Helios Technologies Devops profile for hire">
+
+    <!-- /// Favicons ////////  -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= csrf_meta_tags %>
+
+    <!-- /// Google Fonts ////////  -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+
+  </head>
+  <body>
+
+    <div id="wrap">
+
+      <div id="header">
+
+        <!-- /// HEADER  //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <%= yield %>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      </div><!-- end #footer -->
+
+    </div><!-- end #wrap -->
+
+    <a id="back-to-top" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <a id="print" href="javascript:window.print()" title="Print the CV">
+      <i class="fa fa-print"></i>
+    </a>
+
+    <a id="pdf" href="#" title="Download it as a .pdf">
+      <i class="fa fa-download"></i>
+    </a>
+
+  </body>
+</html>

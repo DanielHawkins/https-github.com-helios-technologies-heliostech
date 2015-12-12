@@ -54,6 +54,9 @@
 //= require gauge.min
 //= require respond.min
 //= require inview
+//
+// PAGES
+//= require team
 
 $(document).ready(function() {
   loadEmail('contact', 'mbox-contact');

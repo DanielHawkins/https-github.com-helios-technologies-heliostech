@@ -10,9 +10,10 @@ Rails.application.routes.draw do
   get 'jobs' => 'main#jobs' , as: 'jobs'
 
   # ABOUT US
-  get 'about-us' => 'about#index' , as: 'about'
-  get 'about-us/areas-of-expertise' => 'about#expertise', as: 'expertise'
-  get 'about-us/our-team' => 'about#team', as: 'team'
+  get 'about' => 'about#index' , as: 'about'
+  get 'about/expertise' => 'about#expertise', as: 'expertise'
+  get 'about/team' => 'about#team', as: 'team'
+  get 'team/louis-bellet' => 'team#lbellet'
 
   # SERVICES
   get 'services' => 'services#index' , as: 'services'

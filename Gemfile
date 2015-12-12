@@ -32,6 +32,7 @@ gem 'foreman'
 
 gem 'bootstrap-sass'
 gem 'fontello_rails_converter', :git => 'https://github.com/Mons-web/fontello_rails_converter.git'
+gem 'font-awesome-sass'
 gem 'jquery-turbolinks'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

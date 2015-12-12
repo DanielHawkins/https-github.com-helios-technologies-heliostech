@@ -23,6 +23,11 @@
 @import "owlcarousel/owl.carousel.min";
 @import "owlcarousel/owl.theme.default.min";
 
+// Icons
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 // style
 @import "main";
 @import "global";
@@ -36,3 +41,4 @@
 @import "counters";
 @import "boxes";
 
+@import "team";
